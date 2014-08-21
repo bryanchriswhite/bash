@@ -19,7 +19,7 @@ shopt -s checkwinsize # make sure terminals wrap lines correctly after resizing 
 # PS1='\h:\w\$ ' # boring prompt
 PS1='\h:\w\[\033[32m\]$(__git_ps1)\[\033[0m\]$ ' # colorful prompt with git
 alias ..='cd ..'
-alias an='annotate -msp after'
+alias an='bundle exec annotate -msp after'
 alias ba='$EDITOR ~/.bash_profile' # edit your .bash_profile
 alias bs='$EDITOR $DEVDIR/bash/spreemo.bash' # edit this file; don't forget to create pull request later
 alias bu='brew update && brew upgrade' # update homebrew applications
