@@ -12,6 +12,8 @@ source /usr/local/etc/bash_completion.d/git-prompt.sh
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
+export PATH=$DEVDIR/chewy/bin:$PATH
+
 export EDITOR=subl
 HISTSIZE=500
 shopt -s checkwinsize # make sure terminals wrap lines correctly after resizing them
