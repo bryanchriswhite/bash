@@ -6,9 +6,13 @@
 # You can override any alias here by setting it in your personal .bash_profile
 # If you have aliases that would be useful to the team, please make a pull request
 
-
-source /usr/local/etc/bash_completion.d/git-completion.bash
-source /usr/local/etc/bash_completion.d/git-prompt.sh
+if [[ `uname` == 'Darwin' ]]; then
+  source /usr/local/etc/bash_completion.d/git-completion.bash
+  source /usr/local/etc/bash_completion.d/git-prompt.sh
+elif [[ `uname` == 'Linux' ]]; then
+  source /etc/bash_completion.d/git-prompt
+  source /usr/share/bash-completion/completions/git
+fi
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
