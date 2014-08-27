@@ -48,6 +48,7 @@ alias gitfix='find .git -name "*conflicted*" -print -exec rm {} \;' # delete Dro
 alias gp='git fetch -p && git-branch-delete-orphans' # prune local branches not on Github; dangerous!
 alias gs='git status -s' # succinct status
 alias gu='bundle exec guard'
+alias gup='bundle exec guard start --force-polling'
 alias hist='git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short'
 alias l='ls -aBFG'
 alias lo='rake db:schema:load'
