@@ -62,6 +62,7 @@ alias rl='. ~/.bash_profile' # Reload your .bash_profile and this file
 alias rmcon='find . -name "*conflicted*" -print -exec rm {} \;' # Remove all Dropbox conflicted versions
 alias rs='spring rspec -fd'
 alias rss='spring rspec -fd spec' # https://github.com/jonleighton/spring-commands-rspec/issues/21
+alias ru='rubocop --display-cop-names --format offenses --format progress'
 alias s='cd $DEVDIR/spreemo-lite'
 alias t='less -e' # types file, and quits at end of file
 
